@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age-O-meter</title>
+</head>
+<div id="navbar">
+    <div id="logo">
+        <img src="codealphalogo.png" alt="Code Alpha">
+    </div>
+    <div id="name"><h1>Age-O-meter</h1></div>
+</div>
+
+<div id="container">
+    <form>
+        <div id="base">
+            <h4>Age Calculator</h4>
+        </div>
+        <div id="block">
+            <p class="title">Date:</p>
+                <input type="text" name="date" id="date" placeholder="dd"
+                minlength="1" maxlength="2" required>
+            <p class="title">Month:</p>
+                <input type="text" name="month" id="month" placeholder="mm"
+                minlength="1" maxlength="2" required>
+            <p class="title">Year:</p>
+                <input type="text" name="year" id="year" placeholder="yyyy"
+                minlength="4" maxlength="4" required>
+        </div>
+
+        <input type="button" value="submit" name="submit"
+        onclick="age()"/>
+       
+        <div id="age"></div>
+    </form>
+</div>
+<body>
+ <script src="script.js"></script>   
+</body>
+</html>
